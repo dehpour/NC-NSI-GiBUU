@@ -1,0 +1,117 @@
+&input
+  eventtype           = 5
+
+  numEnsembles        = 4000
+  numTimeSteps        = 0
+
+  num_runs_SameEnergy = 1
+  num_Energies        = 1
+
+  path_To_Input       = '~/GiBUU/buuinput'
+  version             = 2023
+/
+
+
+&neutrino_induced
+  process_ID = 3
+  flavor_ID  = 2
+
+  nuXsectionMode = 6
+
+  includeQE     = .true.
+  includeDELTA  = .true.
+  includeRES    = .false.
+  includeDIS    = .false.
+  include1pi    = .false.
+  include2pi    = .false.
+  include2p2hQE = .false.
+  
+  printAbsorptionXS  = .true.
+  printInclHist      = .true.
+/
+
+
+&nl_SigmaMC
+  Enu = 1
+/
+
+
+&ff_QE
+  parametrization = 3
+
+  useNonStandardMA = .true.
+  MA_in = 0.999
+
+  MA8 = 1.154
+  gA8 = 0.530
+  deltas = -0.15
+  
+  justNSImue = .false.
+  epVumue      = 0
+  epVdmue      = 0
+  epVsmue      = 0
+  epAumue      = 0
+  epAdmue      = 0
+  epAsmue      = 0
+
+  justSMpNSImumu = .false.
+  epVumumu     = 0
+  epVdmumu     = 0
+  epVsmumu     = 0
+  epAumumu     = 0
+  epAdmumu     = 0
+  epAsmumu     = 0
+
+  justNSImutau = .false.
+  epVumutau    = 0
+  epVdmutau    = 0
+  epVsmutau    = 0
+  epAumutau    = 0
+  epAdmutau    = 0
+  epAsmutau    = 0
+/
+
+
+&neutrino_matrixelement
+  which_resonanceModel = 1
+/
+
+
+&input_FF_Delta
+  FF_Delta = 1
+
+  justNSImue = .false.
+  epVumue      = 0
+  epVdmue      = 0
+  epVsmue      = 0
+  epAumue      = 0
+  epAdmue      = 0
+  epAsmue      = 0
+
+  justSMpNSImumu = .false.
+  epVumumu     = 0
+  epVdmumu     = 0
+  epVsmumu     = 0
+  epAumumu     = 0
+  epAdmumu     = 0
+  epAsmumu     = 0
+
+  justNSImutau = .false.
+  epVumutau    = 0
+  epVdmutau    = 0
+  epVsmutau    = 0
+  epAumutau    = 0
+  epAdmutau    = 0
+  epAsmutau    = 0
+/
+
+
+&target
+  Z = 18
+  A = 40
+/
+
+
+&initRandom
+  Seed = 0
+/
