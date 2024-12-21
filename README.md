@@ -34,9 +34,16 @@ We have `005_Neutrino_NC_NSI.job` in `GiBUU/release/testRun/jobCards` to do it. 
 
 ## Cite
 
-If you do use anything here please cite [arXiv:24xx.xxxxx](http://arxiv.org/abs/24xx.xxxxx) with the following BibTex info
+If you do use anything here please cite [arXiv:2412.13349](http://arxiv.org/abs/2412.13349) with the following BibTex info
 
 ```
-@article{
+@article{Abbaslu:2024jzo,
+    author = "Abbaslu, Saeed and Dehpour, Mehran and Farzan, Yasaman and Safari, Sahar",
+    title = "{Neutrino nucleus Quasi-Elastic and resonant Neutral Current scatterings with Non-Standard Interactions}",
+    eprint = "2412.13349",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    month = "12",
+    year = "2024"
 }
 ```
